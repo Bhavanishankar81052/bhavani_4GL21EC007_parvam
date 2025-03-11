@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        th{
+                color: rgb(106, 8, 197);
+                background-color: aquamarine;
+            }
+            td{
+                color: rgb(205, 138, 76);
+                color: rgb(205, 76, 78);
+                background-color: rgb(176, 127, 255);
+            }
+            table{
+                border-width:2px;
+                border-color: brown;
+                /* border-style: dashed,dotted, solid, dashed,groove,ridge */
+                border-style: solid;
+                /* shorthand property */
+                /* syntax: border:width style color */
+                border:5px dashed yellowgreen;  
+                /* to make the border radius */
+                border-radius: 10px; 
+                /* we can apply border for 4 direction */
+                /* they are top,bottom,right,left; */
+                border-top: 10px solid palegreen;
+                border-bottom: 10px solid blue;
+                border-left: 10px solid plum;
+                border-right: 10px solid red;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 32px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 10px;
+                /* to make all border merge */
+                border-collapse: collapse;
+            }
+            td{
+                border:2px solid blueviolet;
+                border-radius: 5px;
+                border-collapse:collapse ;
+            
+            }
+            .para-one{
+                color: blueviolet;
+                background: hotpink;
+                font-size: 80px;
+                font-weight: 80px;
+                font-family: "sigmar",serif;
+            }
+            .para-two{
+                color: aquamarine;
+                background-color: black;
+                font-size: 80px;
+                font-weight: 80px;
+                font-family: "sigmar",serif;
+            }
+            .para-three{
+                color:blue;
+                background-color:antiquewhite;
+                font-size: 80px;
+                font-weight: 80px;
+                font-family: "sigmar",serif;
+            }
+            .para-four{
+                color: brown;
+                background-color: aqua;
+                font-size: 80px;
+                font-weight: 80px;
+                font-family: "Sigmar", serif;
+            }
+            
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Sigmar&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+        
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#country">Home</a>
+            </li>
+            <li>
+                <a href="#state">About</a>
+            </li>
+            <li>
+                <a href="#capital">Services</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <aside>
+        <p class="para-one">information about country state and capital</p> 
+    </aside>
+
+    <main>
+        <section id="country">
+            <h2 class="para-two">INDIA</h2>
+            <p>India offical the republic of India,is a country of south asia.
+                It is a seventh largest country by area.
+                offical language is hindi.
+                It has a world's most popular democarcy.
+                bounded by the indian ocean on the south,the arbian sea on the southwest and bay of bengal on the southeast
+            </p>
+            <h3>Indian Flag</h3>
+            <figure>
+                <img src="media/india.jpg" alt="india" width="200px"><br><br>
+                <video src="media/flag.mp4" controls src width="200px" muted loop autoplay ></video><br><br>
+            </figure>
+                <table>
+                    <tr>
+                    <th>State</th>
+                    <th>Capital</th>
+                    <th>Language</th>
+                    </tr>
+                    <tr>
+                    <td>Andra Pradesh</td>
+                    <td>Amaravatdi</td>
+                    <td>Telagu</td>
+                    </tr>
+                    <tr>
+                        <td>Assam</td>
+                        <td>Dispur</td>
+                        <td>Assamese</td>
+                    </tr>
+                    <tr>
+                        <td>Goa</td>
+                        <td>Panaji</td>
+                        <td>Konkani</td>
+                    </tr>
+                    <tr>
+                        <td>Karnataka</td>
+                        <td>Bengaluru</td>
+                        <td>Kannada</td>
+                    </tr>
+                     <tr>
+                            <td>panjab</td>
+                            <td>Chandigarh</td>
+                            <td>Punjab</td>
+                    </tr>
+                    <tr>
+                        <td>Telagana</td>
+                        <td>Hyderbad</td>
+                        <td>Telagu</td>
+                    </tr>
+                    <tr>
+                        <td>West Bengal</td>
+                        <td>Kolkata</td>
+                        <td>Bengali</td>
+                    </tr>
+                </table>
+        </section>
+
+        <section id="state">
+            <h2 class="para-three">KARNATAKA</h2>
+            <p>one of the state of india.The state mainly divided into three parts.
+               <ol>
+                <li>Coastel region</li>
+                <li>Malnad region</li>
+                <li>Maidan region</li>
+               </ol>
+            </p>
+        </section>
+
+        <section id="capital">
+            <h2 class="para-four">BENGALORE</h2>
+            <p>It is a capital of karnataka.The center of high tech industry and the city is also known as the silicon city</p>
+            <h3>Benefit for living in bangalore</h3>
+            <ul>
+                <li>Job Opportunities</li>
+                <li>climate</li>
+                <li>education facility</li>
+                <li>food</li>
+                <li>Entertaniment</li>
+                <li>Health</li>
+                <li>public transport</li>
+                <li>connectivity</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>All Rights Reserved & copy; 2025,
+            <a href="https://www.Google.com" target="_blank">Google </a>
+            </p>
+        </footer>
+
+
+    </footer>
+</body>
+</html>
