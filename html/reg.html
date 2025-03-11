@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <label for="first Name">First Name:</label>
+         <input type="text" name="first_name" id="first_name" minlength="16"><br><br>
+         <!-- min ,max-attributr -->
+
+        <label for="Middle_name">Middle name:</label>
+         <input type="text" name="Middle_name"id="Middle_name"> <br><br> 
+
+        <label for="Last_name">Last name:</label> 
+         <input type="text" name="Last_name"id="last_name"> <br><br>
+         
+         <label for="Father_name">Father name:</label> 
+         <input type="text" name="Father_name"id="Father_name"> <br><br>
+
+         <label for="Mother_name">Mother name:</label> 
+         <input type="text" name="Mother_name"id="Mother_name"> <br><br>
+         
+
+        <label for ="email_id">Email ID:</label>
+         <input type="email" name="email_id" id="email_id"><br><br>
+
+         <label for ="Password">Password:</label>
+         <input type="Password" name="Password" id="Password"><br><br>
+
+        <label for="phone_number">phone Number:</label>
+          <input type="tel"name="phone_number" id="phone_number"><br><br>
+
+        <label for="age">Age:</label>
+          <input type="number"name="age" id="age" max="20"><br><br>
+
+        <label for="dob">DOB:</label>
+          <input type="date" name="dob" id="dob" min="2025-01-01"><br><br>
+
+        <label for="birthday_week">Birthday Week:</label>
+         <input type="week" name="birthday_week" id="birthday_week"><br><br>
+
+        <label for="birthday_month">Birthday Month:</label>
+         <input type="month"name="birthday_month"id="birthday_month"><br><br>
+
+        <label for="birth_time">Birth Time:</label>
+         <input type="time"name="birth_time"id="birth_time"><br><br>
+
+         <label for="dob_time">DOB with Birthday Time:</label>
+         <input type="datetime-local" name="dob_time"id="dob_time"><br><br>
+
+         <label for="gender">Gender:</label>
+
+         <input type="radio" name="gender" id="Male">
+         <label for="male">Male</label>
+
+         <input type="radio" name="gender" id="Female">
+         <label for="female">Female</label>
+
+         <input type="radio" name="gender"id="others">
+         <label for="others">others</label><br><br>
+
+         <label for="subjects">Favourite subjects:</label><br>
+
+         <input type="radio" name="subjects"id="Maths">
+         <label for="Maths">Maths</label><br>
+
+         <input type="radio" name="subjects"id="Social Science">
+         <label for="Social science">Social science</label><br>
+
+         <input type="radio" name="subjects"id="English">
+         <label for="English">English</label><br>
+
+         <input type="radio" name="subjects"id="Kannada">
+         <label for="Kannada">Kannada</label><br>
+
+         <input type="radio" name="subjects"id="Hindi">
+         <label for="Hindi">Hindi</label><br>
+
+         <input type="radio" name="subjects"id="Science">
+         <label for="Science">Science</label><br>
+         <br><br>
+
+     <input type="submit"><br><br>
+     <input type="file" name="upload_photo" multiple accept="Application/pdf"><br><br>
+     <!-- Application/doc,pdf -->
+     <label for="upload photo">upload_photo</label><br><br>
+     <input type="reset">
+    </form>   
+</body>
+</html>
