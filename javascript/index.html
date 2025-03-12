@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this is css commt */
+    </style>
+</head>
+<body>
+    <!-- Radha Krishna
+    pascal case=RadhaKrishna
+    camel case=radha Krishna
+    snake case=radha krishna -->
+
+    <!-- this is html commt -->
+    <script>
+        //This is javascript commt
+        // declaring the variable in JS
+        // primitive data types include string datatype null boolean undefined
+        var firstName ="Radha";
+        console.log(firstName);
+        console.log(typeof(firstName));
+
+        var lastName;
+        lastName ="Krishna"
+        console.log(lastName);
+        console.log(typeof(lastName));
+
+        var age = 21;
+        console.log(age);
+        console.log(typeof(age));
+
+        var percent = 88.75;
+        console.log(percent);
+        console.log(typeof(percent));
+
+        var isIndian =true;
+        console.log(isIndian);
+        console.log(typeof(isIndian));
+        
+        var isEngineer;
+        console.log(isEngineer);
+        // console.log(typeof(isEngineer));
+
+        var isEmployee = null;
+        console.log(isEmployee);
+
+        console.log("My name is "+ firstName + " " + lastName + ". I'm" + age + "years old.");
+
+        // using template literals
+        console.log(`My name is ${firstName} ${lastName} .${age} years old.`)
+        
+        // non primitive datatupes includes objects and arrays
+        var person={
+            name : "Radha Krishna",
+            age :21,
+            gender :"female",
+            company : "Parvam"
+
+        };
+        console.log(person);
+        console.log(typeof(person));
+
+        var evenNumbers = [2,4,6,8,10];
+        console.log(evenNumbers);
+        console.log(typeof(evenNumbers));
+
+        // operators in JS
+        // arithmetic operator +,-,/,%,**
+        var op1 =10, op2=20;
+        var sum =op1+op2;
+        var diff =op1-op2;
+        var prod =op1*op2;
+        var quot = op1/op2;
+        var rem =op1%op2;
+        var pow =op1**5;
+        console.log("the arithmetic operator as follows");
+        console.log(`Sum of ${op1} & ${op2}: ${sum}`);
+        console.log(`difference of ${op1} & ${op2}: ${diff}`);
+        console.log(`product of ${op1} & ${op2}: ${prod}`);
+        console.log(`quotient of ${op1} & ${op2}: ${quot}`);
+        console.log(`modulus or remainder of ${op1} & ${op2}: ${rem}`);
+        console.log(`exponenet of ${op1} to the power of 5: ${pow}`);
+
+    
+        // assignment operaton: =,+=,-=,/=,&=
+        var a;
+        console.log(`assignment for the varaiable a: ${a= 5}`);
+        console.log(`sum & assignment: ${sum += op1}`);  //   sum +=op1<=> sum =sum+op1
+        console.log(`difference & assignment: ${diff -= op1}`);
+        console.log(`product & assignment: ${prod *= op1}`);
+        console.log(`quotient & assignment: ${quot /= op1}`);
+
+        //realtional opertor <=,>=,<,>,===,!=
+        var x = 10,y = 20,z = 20 ,s='20';
+        console.log(`${x} is lesser than ${y}:${x<y}`);
+        console.log(`${y} is greater than ${y}:${y>x}`);
+        console.log(`${x} is lesser than or equal to ${y}:${x<=y}`);
+        console.log(`${y} is greater than or equal to ${y}:${y<=x}`);
+        console.log(`${y} is  equal to${x}:${y==z}`);
+        console.log(`${x} is not equal to ${y}:${x!=y}`);
+        console.log(`${y} is strictly equal to ${s}:${y===s}.
+        it is false,because y is ${typeof(y)}and s is ${typeof(s)}.`);
+
+        //logical operators and(&) or(||) not(!)
+        var isIndian = true;
+        var isAdult = true;
+        var isMinor = false;
+        var isForeigner = false;
+
+        console.log(`The person can vote: ${isIndian && isAdult}`);
+        console.log(`The person can vote: ${isIndian && isMinor}`);
+        console.log(`The person can vote: ${isIndian || isAdult}`);
+        console.log(`The person can vote: ${isIndian || isMinor}`);
+        console.log(`The person can vote: ${isIndian && (!isForeigner)}`);
+        console.log(`The person can vote: ${isIndian && (!isMinor)}`);
+        
+        //AND:       OR:   NOT:
+        //A B R    A B R  A B
+        //0 0 0    0 0 0  0 1
+        //0 1 0    0 1 1  1 0
+        //1 0 0    1 0 1
+        //1 1 1    1 1 1
+
+        //increment and decrement operator: ++.--
+        var count = 1;
+        console.log(count);
+        //Pre-decerement and Pre-increment
+        console.log(++count);
+        console.log(count);
+        console.log(--count);
+        console.log(count);
+        console.log(`-----`);
+        //Post-decerement and Post-increment
+        console.log(count++);
+        console.log(count);
+        console.log(count--);
+        console.log(count);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
