@@ -1,0 +1,18 @@
+{% extends 'teacher_crud/menu.html' %}
+
+{%block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>confirm delete</h3>
+
+    </div>
+    <div class="card-body">
+        <p>do really want to delete this teacher details </p>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a href="{% url 'teacher-list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{%endblock %}

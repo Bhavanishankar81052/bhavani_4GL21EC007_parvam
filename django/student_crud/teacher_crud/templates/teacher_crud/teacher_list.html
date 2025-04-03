@@ -1,0 +1,41 @@
+{% extends 'teacher_crud/menu.html' %}
+
+{%block content %}
+<h1>list of teachers</h1>
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+        <th scope="col">email-id</th>
+        <th scope="col">phone number</th>
+        <th scope="col">qualification</th>
+        <th scope="col">subject</th>
+        <th scope="col">experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for teacher in teachers %}
+      <tr>
+          <td>{{ teacher.name }}</td>
+          <td>{{ teacher.age }}</td>
+          <td>{{ teacher.email }}</td>
+          <td>{{ teacher.phone }}</td>
+          <td>{{ teacher.qualification }}</td>
+          <td>{{ teacher.subject }}</td>
+          <td>{{ teacher.experience }}</td>
+          <td>
+              <a href="{% url 'view-teacher' teacher.pk %}" class="btn btn-info btn-sm">View</a>
+              <a href="{% url 'edit-teacher' teacher.pk %}" class="btn btn-warning btn-sm">Edit</a>
+              <a href="{% url 'delete-teacher' teacher.pk %}" class="btn btn-danger btn-sm">Delete</a>
+          </td>
+      </tr>
+      {% empty %}
+      <tr>
+          <td colspan="7" class="text-center">No teacher details found!</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+  </table>
+{%endblock %}
